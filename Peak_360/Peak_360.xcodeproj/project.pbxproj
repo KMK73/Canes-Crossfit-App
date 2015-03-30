@@ -10,7 +10,7 @@
 		DF9D09461ABB251900C418C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D09451ABB251900C418C1 /* main.m */; };
 		DF9D09491ABB251900C418C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D09481ABB251900C418C1 /* AppDelegate.m */; };
 		DF9D094C1ABB251900C418C1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D094B1ABB251900C418C1 /* FirstViewController.m */; };
-		DF9D094F1ABB251900C418C1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D094E1ABB251900C418C1 /* SecondViewController.m */; };
+		DF9D094F1ABB251900C418C1 /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9D094E1ABB251900C418C1 /* LeaderboardViewController.m */; };
 		DF9D09521ABB251900C418C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9D09501ABB251900C418C1 /* Main.storyboard */; };
 		DF9D09541ABB251900C418C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9D09531ABB251900C418C1 /* Images.xcassets */; };
 		DF9D09571ABB251900C418C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF9D09551ABB251900C418C1 /* LaunchScreen.xib */; };
@@ -36,8 +36,8 @@
 		DF9D09481ABB251900C418C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DF9D094A1ABB251900C418C1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DF9D094B1ABB251900C418C1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		DF9D094D1ABB251900C418C1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DF9D094E1ABB251900C418C1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DF9D094D1ABB251900C418C1 /* LeaderboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
+		DF9D094E1ABB251900C418C1 /* LeaderboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
 		DF9D09511ABB251900C418C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF9D09531ABB251900C418C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF9D09561ABB251900C418C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 				DF9D09481ABB251900C418C1 /* AppDelegate.m */,
 				DF9D094A1ABB251900C418C1 /* FirstViewController.h */,
 				DF9D094B1ABB251900C418C1 /* FirstViewController.m */,
-				DF9D094D1ABB251900C418C1 /* SecondViewController.h */,
-				DF9D094E1ABB251900C418C1 /* SecondViewController.m */,
+				DF9D094D1ABB251900C418C1 /* LeaderboardViewController.h */,
+				DF9D094E1ABB251900C418C1 /* LeaderboardViewController.m */,
 				DF9D096C1ABB25E000C418C1 /* ThirdViewController.h */,
 				DF9D096D1ABB25E000C418C1 /* ThirdViewController.m */,
 				DF9D09501ABB251900C418C1 /* Main.storyboard */,
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF9D094F1ABB251900C418C1 /* SecondViewController.m in Sources */,
+				DF9D094F1ABB251900C418C1 /* LeaderboardViewController.m in Sources */,
 				DF9D096E1ABB25E000C418C1 /* ThirdViewController.m in Sources */,
 				DF9D09491ABB251900C418C1 /* AppDelegate.m in Sources */,
 				DF9D094C1ABB251900C418C1 /* FirstViewController.m in Sources */,
@@ -424,6 +424,7 @@
 				DF9D09681ABB251900C418C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF9D09691ABB251900C418C1 /* Build configuration list for PBXNativeTarget "Peak_360Tests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +433,7 @@
 				DF9D096B1ABB251900C418C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

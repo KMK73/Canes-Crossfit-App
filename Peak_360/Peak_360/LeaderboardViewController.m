@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Kelsey Kjeldsen. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "LeaderboardViewController.h"
 
-@interface SecondViewController ()
+@interface LeaderboardViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation LeaderboardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
