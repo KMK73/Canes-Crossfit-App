@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF32EC1D1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32EC1C1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift */; };
+		DF32EC1F1AC8B06600A6BE3B /* WorkoutLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */; };
+		DF32EC211AC8B1AF00A6BE3B /* SampleWorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */; };
+		DF4619481AC8879500C144B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619471AC8879500C144B7 /* AppDelegate.swift */; };
+		DF46194A1AC8879500C144B7 /* WODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619491AC8879500C144B7 /* WODViewController.swift */; };
+		DF46194C1AC8879500C144B7 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46194B1AC8879500C144B7 /* LeaderboardViewController.swift */; };
+		DF46194F1AC8879500C144B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF46194D1AC8879500C144B7 /* Main.storyboard */; };
+		DF4619511AC8879500C144B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4619501AC8879500C144B7 /* Images.xcassets */; };
+		DF4619541AC8879500C144B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4619521AC8879500C144B7 /* LaunchScreen.xib */; };
+		DF4619601AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46195F1AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift */; };
+		DF46196A1AC887D300C144B7 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619691AC887D300C144B7 /* PRViewController.swift */; };
+		DF46196C1AC887E100C144B7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46196B1AC887E100C144B7 /* ProfileViewController.swift */; };
+		DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */; };
+		DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */; };
+		DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */; };
+		DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF46195A1AC8879500C144B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF46193A1AC8879500C144B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF4619411AC8879500C144B7;
+			remoteInfo = "Peak 360 Crossfit App Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF32EC1C1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+		DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutLeaderboard.swift; sourceTree = "<group>"; };
+		DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleWorkoutData.swift; sourceTree = "<group>"; };
+		DF4619421AC8879500C144B7 /* Peak 360 Crossfit App Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peak 360 Crossfit App Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4619461AC8879500C144B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF4619471AC8879500C144B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF4619491AC8879500C144B7 /* WODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WODViewController.swift; sourceTree = "<group>"; };
+		DF46194B1AC8879500C144B7 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		DF46194E1AC8879500C144B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF4619501AC8879500C144B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF4619531AC8879500C144B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DF4619591AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peak 360 Crossfit App SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF46195E1AC8879500C144B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF46195F1AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peak_360_Crossfit_App_SwiftTests.swift; sourceTree = "<group>"; };
+		DF4619691AC887D300C144B7 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
+		DF46196B1AC887E100C144B7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRExercises.swift; sourceTree = "<group>"; };
+		DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableViewController.swift; sourceTree = "<group>"; };
+		DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePRData.swift; sourceTree = "<group>"; };
+		DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF46193F1AC8879500C144B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4619561AC8879500C144B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF4619391AC8879500C144B7 = {
+			isa = PBXGroup;
+			children = (
+				DF4619441AC8879500C144B7 /* Peak 360 Crossfit App Swift */,
+				DF46195C1AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests */,
+				DF4619431AC8879500C144B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF4619431AC8879500C144B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF4619421AC8879500C144B7 /* Peak 360 Crossfit App Swift.app */,
+				DF4619591AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF4619441AC8879500C144B7 /* Peak 360 Crossfit App Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DF4619471AC8879500C144B7 /* AppDelegate.swift */,
+				DF4619491AC8879500C144B7 /* WODViewController.swift */,
+				DF46194B1AC8879500C144B7 /* LeaderboardViewController.swift */,
+				DF4619691AC887D300C144B7 /* PRViewController.swift */,
+				DF46196B1AC887E100C144B7 /* ProfileViewController.swift */,
+				DF46194D1AC8879500C144B7 /* Main.storyboard */,
+				DF32EC1C1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift */,
+				DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */,
+				DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */,
+				DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */,
+				DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */,
+				DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */,
+				DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */,
+				DF4619501AC8879500C144B7 /* Images.xcassets */,
+				DF4619521AC8879500C144B7 /* LaunchScreen.xib */,
+				DF4619451AC8879500C144B7 /* Supporting Files */,
+			);
+			path = "Peak 360 Crossfit App Swift";
+			sourceTree = "<group>";
+		};
+		DF4619451AC8879500C144B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF4619461AC8879500C144B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF46195C1AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF46195F1AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift */,
+				DF46195D1AC8879500C144B7 /* Supporting Files */,
+			);
+			path = "Peak 360 Crossfit App SwiftTests";
+			sourceTree = "<group>";
+		};
+		DF46195D1AC8879500C144B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF46195E1AC8879500C144B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF4619411AC8879500C144B7 /* Peak 360 Crossfit App Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4619631AC8879500C144B7 /* Build configuration list for PBXNativeTarget "Peak 360 Crossfit App Swift" */;
+			buildPhases = (
+				DF46193E1AC8879500C144B7 /* Sources */,
+				DF46193F1AC8879500C144B7 /* Frameworks */,
+				DF4619401AC8879500C144B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Peak 360 Crossfit App Swift";
+			productName = "Peak 360 Crossfit App Swift";
+			productReference = DF4619421AC8879500C144B7 /* Peak 360 Crossfit App Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF4619581AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4619661AC8879500C144B7 /* Build configuration list for PBXNativeTarget "Peak 360 Crossfit App SwiftTests" */;
+			buildPhases = (
+				DF4619551AC8879500C144B7 /* Sources */,
+				DF4619561AC8879500C144B7 /* Frameworks */,
+				DF4619571AC8879500C144B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF46195B1AC8879500C144B7 /* PBXTargetDependency */,
+			);
+			name = "Peak 360 Crossfit App SwiftTests";
+			productName = "Peak 360 Crossfit App SwiftTests";
+			productReference = DF4619591AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF46193A1AC8879500C144B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Kelsey Kjeldsen";
+				TargetAttributes = {
+					DF4619411AC8879500C144B7 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DF4619581AC8879500C144B7 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DF4619411AC8879500C144B7;
+					};
+				};
+			};
+			buildConfigurationList = DF46193D1AC8879500C144B7 /* Build configuration list for PBXProject "Peak 360 Crossfit App Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF4619391AC8879500C144B7;
+			productRefGroup = DF4619431AC8879500C144B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF4619411AC8879500C144B7 /* Peak 360 Crossfit App Swift */,
+				DF4619581AC8879500C144B7 /* Peak 360 Crossfit App SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF4619401AC8879500C144B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF46194F1AC8879500C144B7 /* Main.storyboard in Resources */,
+				DF4619541AC8879500C144B7 /* LaunchScreen.xib in Resources */,
+				DF4619511AC8879500C144B7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4619571AC8879500C144B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF46193E1AC8879500C144B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */,
+				DF46194C1AC8879500C144B7 /* LeaderboardViewController.swift in Sources */,
+				DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */,
+				DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */,
+				DF32EC211AC8B1AF00A6BE3B /* SampleWorkoutData.swift in Sources */,
+				DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */,
+				DF4619481AC8879500C144B7 /* AppDelegate.swift in Sources */,
+				DF46196A1AC887D300C144B7 /* PRViewController.swift in Sources */,
+				DF32EC1F1AC8B06600A6BE3B /* WorkoutLeaderboard.swift in Sources */,
+				DF46194A1AC8879500C144B7 /* WODViewController.swift in Sources */,
+				DF46196C1AC887E100C144B7 /* ProfileViewController.swift in Sources */,
+				DF32EC1D1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4619551AC8879500C144B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4619601AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF46195B1AC8879500C144B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF4619411AC8879500C144B7 /* Peak 360 Crossfit App Swift */;
+			targetProxy = DF46195A1AC8879500C144B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF46194D1AC8879500C144B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF46194E1AC8879500C144B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF4619521AC8879500C144B7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF4619531AC8879500C144B7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF4619611AC8879500C144B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF4619621AC8879500C144B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF4619641AC8879500C144B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Peak 360 Crossfit App Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF4619651AC8879500C144B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Peak 360 Crossfit App Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF4619671AC8879500C144B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Peak 360 Crossfit App SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peak 360 Crossfit App Swift.app/Peak 360 Crossfit App Swift";
+			};
+			name = Debug;
+		};
+		DF4619681AC8879500C144B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Peak 360 Crossfit App SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peak 360 Crossfit App Swift.app/Peak 360 Crossfit App Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF46193D1AC8879500C144B7 /* Build configuration list for PBXProject "Peak 360 Crossfit App Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4619611AC8879500C144B7 /* Debug */,
+				DF4619621AC8879500C144B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF4619631AC8879500C144B7 /* Build configuration list for PBXNativeTarget "Peak 360 Crossfit App Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4619641AC8879500C144B7 /* Debug */,
+				DF4619651AC8879500C144B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF4619661AC8879500C144B7 /* Build configuration list for PBXNativeTarget "Peak 360 Crossfit App SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4619671AC8879500C144B7 /* Debug */,
+				DF4619681AC8879500C144B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF46193A1AC8879500C144B7 /* Project object */;
+}
