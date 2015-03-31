@@ -9,17 +9,16 @@
 import UIKit
 
 class PrTableViewController: UITableViewController {
-
+    
     //variable exercises type array set to the constant of PRData with the hardcoded workout data from the PRExercises class
     var exercises: [PRExercises] = PRData
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func cancelToPrTableViewController(segue:UIStoryboardSegue) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func savePrTableDetail(segue:UIStoryboardSegue) {
+        
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -38,8 +37,7 @@ class PrTableViewController: UITableViewController {
             println("Made it to Prtable function")
             
             
-            let cell = tableView.dequeueReusableCellWithIdentifier("PRTableCell", forIndexPath: indexPath)
-                as PrTableCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("PRTableCell", forIndexPath: indexPath) as PrTableCell
             
             let exercise = exercises[indexPath.row] as PRExercises
             cell.exerciseNameLabel.text = exercise.exerciseName

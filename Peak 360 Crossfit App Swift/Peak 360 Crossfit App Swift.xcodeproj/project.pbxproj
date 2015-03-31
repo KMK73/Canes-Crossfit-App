@@ -19,6 +19,7 @@
 		DF4619601AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46195F1AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift */; };
 		DF46196A1AC887D300C144B7 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619691AC887D300C144B7 /* PRViewController.swift */; };
 		DF46196C1AC887E100C144B7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46196B1AC887E100C144B7 /* ProfileViewController.swift */; };
+		DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */; };
 		DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */; };
 		DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */; };
 		DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */; };
@@ -52,6 +53,7 @@
 		DF46195F1AC8879500C144B7 /* Peak_360_Crossfit_App_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peak_360_Crossfit_App_SwiftTests.swift; sourceTree = "<group>"; };
 		DF4619691AC887D300C144B7 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
 		DF46196B1AC887E100C144B7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableDetailViewController.swift; sourceTree = "<group>"; };
 		DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRExercises.swift; sourceTree = "<group>"; };
 		DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableViewController.swift; sourceTree = "<group>"; };
 		DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePRData.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */,
 				DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */,
 				DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */,
+				DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */,
 				DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */,
 				DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */,
 				DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */,
@@ -191,6 +194,7 @@
 				TargetAttributes = {
 					DF4619411AC8879500C144B7 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 66LXH2SEBD;
 					};
 					DF4619581AC8879500C144B7 = {
 						CreatedOnToolsVersion = 6.2;
@@ -243,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */,
+				DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */,
 				DF46194C1AC8879500C144B7 /* LeaderboardViewController.swift in Sources */,
 				DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */,
 				DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */,
@@ -376,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Peak 360 Crossfit App Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Peak 360 Crossfit App Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

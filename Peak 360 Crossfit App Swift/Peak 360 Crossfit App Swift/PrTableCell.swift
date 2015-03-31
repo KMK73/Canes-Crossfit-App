@@ -14,4 +14,6 @@ class PrTableCell: UITableViewCell {
     @IBOutlet weak var exerciseNameLabel: UILabel!
     @IBOutlet weak var exerciseDescriptionLabel: UILabel!
     @IBOutlet weak var exerciseDateLabel: UILabel!
+    
+    
 }
