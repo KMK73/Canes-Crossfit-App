@@ -415,7 +415,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="17T-II-aIG"/>
                     <connections>
-                        <segue destination="8Lm-QF-QO2" kind="modal" identifier="loginView" id="RVi-CK-I89"/>
+                        <segue destination="8Lm-QF-QO2" kind="modal" identifier="loginView" id="vXc-9N-uKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UE-dr-gfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
