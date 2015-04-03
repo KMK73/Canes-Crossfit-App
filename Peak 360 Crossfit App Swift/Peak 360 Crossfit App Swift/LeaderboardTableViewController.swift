@@ -8,13 +8,15 @@
 
 import UIKit
 
-class LeaderboardTableViewController: UITableViewController {
+class LeaderboardTableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
 
     //variable workouts type array set to the constant of workoutData with the hardcoded workout data
     var workouts: [WorkoutLeaderboard] = workoutData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

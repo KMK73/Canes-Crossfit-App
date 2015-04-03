@@ -1,14 +1,16 @@
 //
-//  ProfileViewController.swift
+//  ViewController.swift
 //  Peak 360 Crossfit App Swift
 //
-//  Created by Kelsey Kjeldsen on 3/29/15.
+//
+//
+//  Created by Kelsey Kjeldsen on 4/1/15.
 //  Copyright (c) 2015 Kelsey Kjeldsen. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,8 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("loginView", sender: self);
+    }
 }
 

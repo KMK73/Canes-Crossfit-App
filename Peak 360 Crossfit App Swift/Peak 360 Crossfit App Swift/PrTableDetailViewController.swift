@@ -12,7 +12,8 @@ class PrTableDetailViewController: UITableViewController {
     
     //text field for user to enter reps and weight detail notes
     @IBOutlet weak var repsNameTextField: UITextField!
-
+    @IBOutlet weak var repsDetailLabel: UILabel!
+    
     //label for list of movements
     @IBOutlet weak var movementDetailLabel: UILabel!
     

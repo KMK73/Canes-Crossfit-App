@@ -38,7 +38,6 @@ class PrTableViewController: UITableViewController {
             
             
             let cell = tableView.dequeueReusableCellWithIdentifier("PRTableCell", forIndexPath: indexPath) as PrTableCell
-            
             let exercise = exercises[indexPath.row] as PRExercises
             cell.exerciseNameLabel.text = exercise.exerciseName
             cell.exerciseDescriptionLabel.text = exercise.exerciseDescription
