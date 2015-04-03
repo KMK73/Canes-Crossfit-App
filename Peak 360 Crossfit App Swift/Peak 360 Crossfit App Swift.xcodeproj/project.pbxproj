@@ -24,6 +24,7 @@
 		DFC19BC81ACCF9A200387E40 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BC71ACCF9A200387E40 /* RegisterPageViewController.swift */; };
 		DFC19BD01ACEE36900387E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BCF1ACEE36900387E40 /* ViewController.swift */; };
 		DFC19BD31ACEE64800387E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC19BD11ACEE64800387E40 /* Main.storyboard */; };
+		DFC19BD51ACEF94800387E40 /* TestRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BD41ACEF94800387E40 /* TestRegisterVC.swift */; };
 		DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */; };
 		DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */; };
 		DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */; };
@@ -62,6 +63,7 @@
 		DFC19BC71ACCF9A200387E40 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		DFC19BCF1ACEE36900387E40 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFC19BD21ACEE64800387E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFC19BD41ACEF94800387E40 /* TestRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRegisterVC.swift; sourceTree = "<group>"; };
 		DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRExercises.swift; sourceTree = "<group>"; };
 		DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableViewController.swift; sourceTree = "<group>"; };
 		DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePRData.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				DFC19BC71ACCF9A200387E40 /* RegisterPageViewController.swift */,
 				DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */,
 				DFC19BCF1ACEE36900387E40 /* ViewController.swift */,
+				DFC19BD41ACEF94800387E40 /* TestRegisterVC.swift */,
 			);
 			path = "Peak 360 Crossfit App Swift";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */,
 				DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */,
 				DF46194C1AC8879500C144B7 /* LeaderboardViewController.swift in Sources */,
+				DFC19BD51ACEF94800387E40 /* TestRegisterVC.swift in Sources */,
 				DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */,
 				DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */,
 				DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */,

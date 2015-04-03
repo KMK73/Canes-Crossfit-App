@@ -353,7 +353,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="userLoginButtonPressed:" destination="8Lm-QF-QO2" eventType="touchUpInside" id="QxS-TX-rh2"/>
+                                    <action selector="loginButtonTapped:" destination="8Lm-QF-QO2" eventType="touchUpInside" id="c2E-Ig-ENo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-0c-ueb">
@@ -422,10 +422,10 @@
             </objects>
             <point key="canvasLocation" x="-453" y="-580"/>
         </scene>
-        <!--Register Page View Controller-->
+        <!--Test RegisterVC-->
         <scene sceneID="Qod-7G-Sbq">
             <objects>
-                <viewController id="29M-p2-OqN" customClass="RegisterPageViewController" customModule="Peak_360_Crossfit_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="29M-p2-OqN" customClass="TestRegisterVC" customModule="Peak_360_Crossfit_App_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hKc-Gd-pKW"/>
                         <viewControllerLayoutGuide type="bottom" id="mx7-lz-zqw"/>
@@ -492,7 +492,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerButtonPressed:" destination="29M-p2-OqN" eventType="touchUpInside" id="ya4-Ux-WdL"/>
+                                    <action selector="registerTapped:" destination="29M-p2-OqN" eventType="touchUpInside" id="JiE-1k-Kx4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApQ-ZA-fFC">
@@ -502,6 +502,9 @@
                                     <color key="titleColor" red="0.0" green="0.67450980390000004" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="gotoLogin:" destination="29M-p2-OqN" eventType="touchUpInside" id="XqZ-6h-37c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-6l-GiE">
                                 <rect key="frame" x="16" y="369" width="136" height="21"/>
@@ -518,10 +521,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="Ytt-cl-OAg" id="WIA-kr-Qh7"/>
-                        <outlet property="firstNameTextField" destination="Ogh-VB-dwr" id="9fo-mZ-vbK"/>
-                        <outlet property="lastNameTextField" destination="uIi-9G-vCV" id="utM-nX-HXs"/>
-                        <outlet property="passwordTextField" destination="ESH-4j-dLs" id="rQO-2P-aO4"/>
+                        <outlet property="emailTextField" destination="Ytt-cl-OAg" id="Pvq-YY-Utj"/>
+                        <outlet property="firstNameTextField" destination="Ogh-VB-dwr" id="8iO-ou-2m4"/>
+                        <outlet property="lastNameTextField" destination="uIi-9G-vCV" id="6m2-TI-Xeb"/>
+                        <outlet property="passwordTextField" destination="ESH-4j-dLs" id="j9T-89-vbV"/>
                         <outlet property="repeatPasswordTextField" destination="koA-e2-4ou" id="YX3-93-LHe"/>
                     </connections>
                 </viewController>
