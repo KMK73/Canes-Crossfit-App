@@ -38,14 +38,14 @@ class LoginViewController: UIViewController {
             alertView.addButtonWithTitle("OK")
             alertView.show()
         } else {
+            //get the posted username and password
+            var post:NSString = "username=\(username)&password=\(password)"
             
-            //var post:NSString = "username=\(username)&password=\(password)"
-            
-            var post:NSString = "session[username]=\(username)&session[password]=\(password)"
+//            var post:NSString = "session[username]=\(username)&session[password]=\(password)"
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string:"http://canespeak360crossfit.com/api/checkLogin.php")!
+            var url:NSURL = NSURL(string:"http://canespeak360crossfit.com/api/login_ios.php")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             
@@ -79,13 +79,14 @@ class LoginViewController: UIViewController {
                     let jsonData:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
                     
                     
-                    let success:NSInteger = jsonData.valueForKey("success") as NSInteger
+                    let loginResult:NSString = jsonData.valueForKey("response") as NSString
                     
                     //[jsonData[@"success"] integerValue];
                     
-                    NSLog("Success: %ld", success);
+                    //NSLog("Success: %ld", success);
                     
-                    if(success == 1)
+                    //response is from the associative array created in login_ios.php
+                    if (loginResult.isEqualToString("success"))
                     {
                         NSLog("Login SUCCESS");
                         

@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProtectedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,17 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+
+        
+        //if login was success send to tab bar view controller main screen
+        var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if(prefs.integerForKey("ISLOGGEDIN") == 1) {
+            self.performSegueWithIdentifier("LoggedIn", sender: self);
+        } else {        //if it was not a success send to login page
         self.performSegueWithIdentifier("loginView", sender: self);
-    }
+        }
+
+        
+        }
 }
 
