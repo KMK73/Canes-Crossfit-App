@@ -1,5 +1,5 @@
 //
-//  TestRegisterVC.swift
+//  RegisterVC.swift
 //  Peak 360 Crossfit App Swift
 //
 //  Created by Kelsey Kjeldsen on 4/3/15.
@@ -14,6 +14,9 @@ class TestRegisterVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
+    
+    @IBOutlet weak var userTypeButton: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +44,9 @@ class TestRegisterVC: UIViewController {
         var password:NSString = passwordTextField.text as NSString
         var confirm_password:NSString = repeatPasswordTextField.text as NSString
         
+        //get text value of Athlete or Coach
+        var user_type:NSString = userTypeButton.titleForSegmentAtIndex(userTypeButton.selectedSegmentIndex)!;
+        
         if ( username.isEqualToString("") || password.isEqualToString("") ) {
             
             var alertView:UIAlertView = UIAlertView()
@@ -59,11 +65,11 @@ class TestRegisterVC: UIViewController {
             alertView.show()
         } else {
             
-            var post:NSString = "first_name=\(first_name)&last_name=\(last_name)&username=\(username)&password=\(password)&c_password=\(confirm_password)";
+            var post:NSString = "first_name=\(first_name)&last_name=\(last_name)&username=\(username)&password=\(password)&c_password=\(confirm_password)&user_type=\(user_type)";
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string: "http://canespeak360crossfit.com/api/registration_ios.php")!
+            var url:NSURL = NSURL(string: "http://canespeak360crossfit.com/api/register_ios.php")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             

@@ -30,10 +30,10 @@ class ProtectedViewController: UIViewController {
         if(prefs.integerForKey("ISLOGGEDIN") == 1) {
             self.performSegueWithIdentifier("LoggedIn", sender: self);
         } else {        //if it was not a success send to login page
-        self.performSegueWithIdentifier("loginView", sender: self);
+            self.performSegueWithIdentifier("loginView", sender: self);
         }
+    }
 
-        
-        }
+
 }
 

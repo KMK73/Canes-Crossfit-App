@@ -20,6 +20,13 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logoutTapped(sender : UIButton) {
+        
+        let appDomain = NSBundle.mainBundle().bundleIdentifier
+        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
+        
+        self.performSegueWithIdentifier("logoutToLoginView", sender: self)
+    }
     
 }
 
