@@ -19,7 +19,6 @@
 		DF46196A1AC887D300C144B7 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619691AC887D300C144B7 /* PRViewController.swift */; };
 		DF46196C1AC887E100C144B7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46196B1AC887E100C144B7 /* ProfileViewController.swift */; };
 		DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */; };
-		DF8A4E911ACC7836001ED716 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8A4E901ACC7836001ED716 /* SwiftyJSON.swift */; };
 		DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */; };
 		DFC19BD01ACEE36900387E40 /* ProtectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BCF1ACEE36900387E40 /* ProtectedViewController.swift */; };
 		DFC19BD31ACEE64800387E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC19BD11ACEE64800387E40 /* Main.storyboard */; };
@@ -57,7 +56,6 @@
 		DF4619691AC887D300C144B7 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
 		DF46196B1AC887E100C144B7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableDetailViewController.swift; sourceTree = "<group>"; };
-		DF8A4E901ACC7836001ED716 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DFC19BCF1ACEE36900387E40 /* ProtectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewController.swift; sourceTree = "<group>"; };
 		DFC19BD21ACEE64800387E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,14 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				DFC19BD11ACEE64800387E40 /* Main.storyboard */,
-				DFC19BCC1ACEE0EC00387E40 /* Leaderboard */,
-				DF8A4E901ACC7836001ED716 /* SwiftyJSON.swift */,
 				DF4619471AC8879500C144B7 /* AppDelegate.swift */,
+				DFC19BCC1ACEE0EC00387E40 /* Leaderboard */,
 				DF4619491AC8879500C144B7 /* WODViewController.swift */,
 				DF46194B1AC8879500C144B7 /* LeaderboardViewController.swift */,
 				DF4619691AC887D300C144B7 /* PRViewController.swift */,
 				DF46196B1AC887E100C144B7 /* ProfileViewController.swift */,
-				DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */,
 				DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */,
 				DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */,
 				DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */,
@@ -161,6 +157,7 @@
 			children = (
 				DF32EC1C1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift */,
 				DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */,
+				DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */,
 			);
 			name = Leaderboard;
 			sourceTree = "<group>";
@@ -273,7 +270,6 @@
 				DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */,
 				DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */,
 				DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */,
-				DF8A4E911ACC7836001ED716 /* SwiftyJSON.swift in Sources */,
 				DF32EC211AC8B1AF00A6BE3B /* SampleWorkoutData.swift in Sources */,
 				DFC19BD01ACEE36900387E40 /* ProtectedViewController.swift in Sources */,
 				DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */,

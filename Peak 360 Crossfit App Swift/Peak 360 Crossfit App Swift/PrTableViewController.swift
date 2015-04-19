@@ -37,7 +37,7 @@ class PrTableViewController: UITableViewController {
             println("Made it to Prtable function")
             
             
-            let cell = tableView.dequeueReusableCellWithIdentifier("PRTableCell", forIndexPath: indexPath) as PrTableCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("PRTableCell", forIndexPath: indexPath) as! PrTableCell
             let exercise = exercises[indexPath.row] as PRExercises
             cell.exerciseNameLabel.text = exercise.exerciseName
             cell.exerciseDescriptionLabel.text = exercise.exerciseDescription

@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
             //get the posted username and password
             var post:NSString = "username=\(username)&password=\(password)"
             
-//            var post:NSString = "session[username]=\(username)&session[password]=\(password)"
+            //            var post:NSString = "session[username]=\(username)&session[password]=\(password)"
             
             NSLog("PostData: %@",post);
             
@@ -54,17 +54,17 @@ class LoginViewController: UIViewController {
             var request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
             request.HTTPMethod = "POST"
             request.HTTPBody = postData
-            request.setValue(postLength, forHTTPHeaderField: "Content-Length")
+            request.setValue(postLength as String, forHTTPHeaderField: "Content-Length")
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
             request.setValue("application/json", forHTTPHeaderField: "Accept")
-
+            
             var reponseError: NSError?
             var response: NSURLResponse?
             
             var urlData: NSData? = NSURLConnection.sendSynchronousRequest(request, returningResponse:&response, error:&reponseError)
             
             if ( urlData != nil ) {
-                let res = response as NSHTTPURLResponse!;
+                let res = response as! NSHTTPURLResponse!;
                 
                 NSLog("Response code: %ld", res.statusCode);
                 
@@ -76,10 +76,10 @@ class LoginViewController: UIViewController {
                     
                     var error: NSError?
                     
-                    let jsonData:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
+                    let jsonData:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as! NSDictionary
                     
                     
-                    let loginResult:NSString = jsonData.valueForKey("response") as NSString
+                    let loginResult:NSString = jsonData.valueForKey("response") as! NSString
                     
                     //[jsonData[@"success"] integerValue];
                     
@@ -100,13 +100,13 @@ class LoginViewController: UIViewController {
                         var error_msg:NSString
                         
                         if jsonData["error_message"] as? NSString != nil {
-                            error_msg = jsonData["error_message"] as NSString
+                            error_msg = jsonData["error_message"] as! NSString
                         } else {
                             error_msg = "Unknown Error"
                         }
                         var alertView:UIAlertView = UIAlertView()
                         alertView.title = "Sign in Failed!"
-                        alertView.message = error_msg
+                        alertView.message = error_msg as String
                         alertView.delegate = self
                         alertView.addButtonWithTitle("OK")
                         alertView.show()

@@ -10,10 +10,56 @@ import UIKit
 
 class WODViewController: UIViewController {
 
+    @IBOutlet weak var exerciseNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var repositories = [String]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let urlAsString = "http://canescrossfitclub.com/api/workouts.php"
+        let url: NSURL  = NSURL(string: urlAsString)!
+        let urlSession = NSURLSession.sharedSession()
+        
+        let jsonQuery = urlSession.dataTaskWithURL(url, completionHandler: { data, response, error -> Void in
+            if (error != nil) {
+                println(error.localizedDescription)
+            }
+            var err: NSError?
+            
+            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as! NSArray?
+            if (err != nil) {
+                println("JSON Error \(err!.localizedDescription)")
+            }
+            
+            println(jsonResult!)
+        })
+        jsonQuery.resume()
+    
     }
+
+    
+
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return repositories.count
+    }
+    
+//
+//    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//
+//        var cell = tableView.dequeueReusableCellWithIdentifier("WorkoutCell", forIndexPath: indexPath) as! UITableViewCell
+//        cell.textLabel?.text = repositories[indexPath.row]
+//        cell.detailTextLabel?.text = repositories[indexPath.row]
+//        return cell
+//    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
