@@ -34,7 +34,7 @@ class PrTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell { //return a table view cell
             
-            println("Made it to Prtable function")
+            println("Made it to PRtable function")
             
             
             let cell = tableView.dequeueReusableCellWithIdentifier("PRTableCell", forIndexPath: indexPath) as! PrTableCell

@@ -19,6 +19,8 @@
 		DF46196A1AC887D300C144B7 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619691AC887D300C144B7 /* PRViewController.swift */; };
 		DF46196C1AC887E100C144B7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46196B1AC887E100C144B7 /* ProfileViewController.swift */; };
 		DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */; };
+		DFAD5B2A1AE4465800003AAF /* CanesWorkoutApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD5B291AE4465800003AAF /* CanesWorkoutApi.swift */; };
+		DFAD5B2C1AE4500A00003AAF /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD5B2B1AE4500A00003AAF /* WorkoutCell.swift */; };
 		DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */; };
 		DFC19BD01ACEE36900387E40 /* ProtectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BCF1ACEE36900387E40 /* ProtectedViewController.swift */; };
 		DFC19BD31ACEE64800387E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC19BD11ACEE64800387E40 /* Main.storyboard */; };
@@ -27,6 +29,7 @@
 		DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */; };
 		DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */; };
 		DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */; };
+		DFE95F6F1AE33AA800938400 /* WorkoutApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE95F6E1AE33AA800938400 /* WorkoutApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,8 @@
 		DF4619691AC887D300C144B7 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
 		DF46196B1AC887E100C144B7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableDetailViewController.swift; sourceTree = "<group>"; };
+		DFAD5B291AE4465800003AAF /* CanesWorkoutApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanesWorkoutApi.swift; path = ../CanesWorkoutApi.swift; sourceTree = "<group>"; };
+		DFAD5B2B1AE4500A00003AAF /* WorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DFC19BCF1ACEE36900387E40 /* ProtectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewController.swift; sourceTree = "<group>"; };
 		DFC19BD21ACEE64800387E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableViewController.swift; sourceTree = "<group>"; };
 		DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePRData.swift; sourceTree = "<group>"; };
 		DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableCell.swift; sourceTree = "<group>"; };
+		DFE95F6E1AE33AA800938400 /* WorkoutApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +114,10 @@
 				DFC19BD11ACEE64800387E40 /* Main.storyboard */,
 				DF4619471AC8879500C144B7 /* AppDelegate.swift */,
 				DFC19BCC1ACEE0EC00387E40 /* Leaderboard */,
-				DF4619491AC8879500C144B7 /* WODViewController.swift */,
+				DFE95F6D1AE33A8E00938400 /* Workout Tab */,
 				DF46194B1AC8879500C144B7 /* LeaderboardViewController.swift */,
-				DF4619691AC887D300C144B7 /* PRViewController.swift */,
 				DF46196B1AC887E100C144B7 /* ProfileViewController.swift */,
+				DF4619691AC887D300C144B7 /* PRViewController.swift */,
 				DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */,
 				DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */,
 				DFC616DA1AC8EFEC00F0F111 /* PRExercises.swift */,
@@ -160,6 +166,17 @@
 				DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */,
 			);
 			name = Leaderboard;
+			sourceTree = "<group>";
+		};
+		DFE95F6D1AE33A8E00938400 /* Workout Tab */ = {
+			isa = PBXGroup;
+			children = (
+				DF4619491AC8879500C144B7 /* WODViewController.swift */,
+				DFAD5B2B1AE4500A00003AAF /* WorkoutCell.swift */,
+				DFAD5B291AE4465800003AAF /* CanesWorkoutApi.swift */,
+				DFE95F6E1AE33AA800938400 /* WorkoutApi.swift */,
+			);
+			name = "Workout Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +283,13 @@
 				DFC616DB1AC8EFEC00F0F111 /* PRExercises.swift in Sources */,
 				DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */,
 				DF46194C1AC8879500C144B7 /* LeaderboardViewController.swift in Sources */,
+				DFAD5B2C1AE4500A00003AAF /* WorkoutCell.swift in Sources */,
 				DFC19BD51ACEF94800387E40 /* TestRegisterVC.swift in Sources */,
+				DFE95F6F1AE33AA800938400 /* WorkoutApi.swift in Sources */,
 				DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */,
 				DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */,
 				DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */,
+				DFAD5B2A1AE4465800003AAF /* CanesWorkoutApi.swift in Sources */,
 				DF32EC211AC8B1AF00A6BE3B /* SampleWorkoutData.swift in Sources */,
 				DFC19BD01ACEE36900387E40 /* ProtectedViewController.swift in Sources */,
 				DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */,

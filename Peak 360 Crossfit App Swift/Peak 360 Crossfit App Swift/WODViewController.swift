@@ -8,13 +8,17 @@
 
 import UIKit
 
-class WODViewController: UIViewController {
+class WODViewController: UIViewController{
+    
+    @IBOutlet weak var WorkoutTitleLabel: UILabel!
+    @IBOutlet weak var WorkoutDescriptionLabel: UILabel!
+    @IBOutlet weak var WodTableView: UITableView!
 
-    @IBOutlet weak var exerciseNameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    var workouts: [WorkoutApi]!
+    var cellHeight: CGFloat = 240
     
     var repositories = [String]()
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,37 +39,46 @@ class WODViewController: UIViewController {
             }
             
             println(jsonResult!)
+            
+            self.workouts = [WorkoutApi]()
+            let api = WorkoutApi(workoutDictionary: NSDictionary);)
+            api.loadWorkoutApi(nil)
         })
         jsonQuery.resume()
-    
+        
+        
     }
-
     
-
+    func didLoadWorkouts (workouts: WorkoutApi[]({
+        self.workouts = workouts
+        //do not know what to put here instead of collectionView
+        UITableView.reloadData()
+        
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    
+        let cell = tableView.dequeueReusableCellWithIdentifier("WorkoutCell", forIndexPath: indexPath) as! UITableViewCell
+        
+        let workout = workouts[indexPath.row]
+        cell.workoutTitleLabel!.text = workout.wod_name
+        cell.workoutDescriptionLabel!.text= workout.wod_description
+        
+        
+        return cell
+    }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repositories.count
+        return workouts.count
     }
     
-//
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//
-//        var cell = tableView.dequeueReusableCellWithIdentifier("WorkoutCell", forIndexPath: indexPath) as! UITableViewCell
-//        cell.textLabel?.text = repositories[indexPath.row]
-//        cell.detailTextLabel?.text = repositories[indexPath.row]
-//        return cell
-//    }
     
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
