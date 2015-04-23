@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string:"http://canespeak360crossfit.com/api/login_ios.php")!
+            var url:NSURL = NSURL(string:"http://canescrossfitclub.com/api/login_ios.php")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             

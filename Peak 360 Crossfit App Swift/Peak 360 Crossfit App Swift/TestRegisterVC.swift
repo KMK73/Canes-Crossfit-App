@@ -69,7 +69,7 @@ class TestRegisterVC: UIViewController {
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string: "http://canespeak360crossfit.com/api/register_ios.php")!
+            var url:NSURL = NSURL(string: "http://canescrossfitclub.com/api/register_ios.php")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             
