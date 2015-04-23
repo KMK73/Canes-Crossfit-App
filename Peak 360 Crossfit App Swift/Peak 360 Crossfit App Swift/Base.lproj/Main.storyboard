@@ -18,33 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome, User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-1A-gdy">
-                                <rect key="frame" x="16" y="29" width="288" height="65"/>
+                                <rect key="frame" x="16" y="20" width="288" height="65"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="March 29, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C00-CI-ild">
-                                <rect key="frame" x="200" y="82" width="103.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MDZ-nO-DKs">
-                                <rect key="frame" x="0.0" y="119" width="320" height="400"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-lz-H1Q">
+                                <rect key="frame" x="0.0" y="108" width="320" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutCell" textLabel="nhe-rS-hEC" detailTextLabel="C62-2j-b7P" rowHeight="94" style="IBUITableViewCellStyleSubtitle" id="MOf-fO-68T" customClass="WorkoutTableCellClass" customModule="Peak_360_Crossfit_App_Swift" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutCell" textLabel="e5F-Sq-ukf" detailTextLabel="ojW-i9-tLQ" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="GKs-ae-WHm">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MOf-fO-68T" id="8pg-N0-Zlh">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GKs-ae-WHm" id="wdj-OP-Iq0">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nhe-rS-hEC" userLabel="workoutTitleLabel">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e5F-Sq-ukf">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C62-2j-b7P" userLabel="workoutDescriptionLabel">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ojW-i9-tLQ">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,26 +49,36 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="RjR-bh-bfe"/>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="lRq-Kk-JFR"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="tSe-4R-Zea"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 29, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C00-CI-ild">
+                                <rect key="frame" x="200" y="44" width="104" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="b0K-lz-H1Q" firstAttribute="top" secondItem="C00-CI-ild" secondAttribute="bottom" constant="46" id="3Bn-7a-KuL"/>
                             <constraint firstItem="5pK-1A-gdy" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="4pj-E0-spq"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5pK-1A-gdy" secondAttribute="bottom" constant="425" id="6sr-7f-aN5"/>
-                            <constraint firstItem="C00-CI-ild" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="GCz-vv-QCz"/>
+                            <constraint firstItem="5pK-1A-gdy" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="HBe-xp-AHC"/>
                             <constraint firstItem="5pK-1A-gdy" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Iiw-YJ-m3t"/>
+                            <constraint firstItem="C00-CI-ild" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="184" id="QSg-bs-i2l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C00-CI-ild" secondAttribute="trailing" constant="0.5" id="Qqa-oU-c6u"/>
+                            <constraint firstItem="5pK-1A-gdy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="XcQ-8E-86m"/>
+                            <constraint firstItem="C00-CI-ild" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="24" id="ZyH-is-Ldr"/>
                             <constraint firstItem="5pK-1A-gdy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="j5n-3p-WGt"/>
-                            <constraint firstItem="C00-CI-ild" firstAttribute="top" secondItem="5pK-1A-gdy" secondAttribute="bottom" constant="18.5" id="mqU-Fy-5EU"/>
+                            <constraint firstItem="5pK-1A-gdy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="vWk-Tf-iTi"/>
                             <constraint firstItem="5pK-1A-gdy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="zs2-RZ-lT2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="WOD" image="wod_tab" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="WodTableView" destination="MDZ-nO-DKs" id="3sk-sD-Ypc"/>
-                        <outlet property="WorkoutDescriptionLabel" destination="C62-2j-b7P" id="B8S-Nh-81R"/>
-                        <outlet property="WorkoutTitleLabel" destination="nhe-rS-hEC" id="EDN-le-2mV"/>
+                        <outlet property="workoutsTableView" destination="b0K-lz-H1Q" id="gNT-KS-MTZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
