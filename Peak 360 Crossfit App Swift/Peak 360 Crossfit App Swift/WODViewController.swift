@@ -21,7 +21,7 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
         super.viewDidLoad()
         api = APIController(delegate: self)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        api.get("http://canescrossfitclub.com/api/workouts.php")
+        api.get("http://canescrossfitclub.com/api/workouts_ios.php")
         //        api.searchItunesFor("Beatles")
     }
     
