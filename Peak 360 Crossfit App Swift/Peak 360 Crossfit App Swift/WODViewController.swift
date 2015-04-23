@@ -14,6 +14,8 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
     let kCellIdentifier: String = "WorkoutCell"
     var imageCache = [String:UIImage]()
     @IBOutlet weak var workoutsTableView: UITableView!
+
+    @IBOutlet weak var workoutDateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,44 +39,15 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let workout = self.workouts[indexPath.row]
         
         // Get the formatted price string for display in the subtitle
-        cell.detailTextLabel?.text = workout.name
-        // Update the textLabel text to use the title from the Album model
-        cell.textLabel?.text = workout.date
+        cell.detailTextLabel?.text = workout.workout_description
         
-        // Start by setting the cell's image to a static file
-        // Without this, we will end up without an image view!
-        //        cell.imageView?.image = UIImage(named: "Blank52")
-        //
-        //        let thumbnailURLString = album.thumbnailImageURL
-        //        let thumbnailURL = NSURL(string: thumbnailURLString)!
-        //
-        //        // If this image is already cached, don't re-download
-        //        if let img = imageCache[thumbnailURLString] {
-        //            cell.imageView?.image = img
-        //        }
-        //        else {
-        // The image isn't cached, download the img data
-        // We should perform this in a background thread
-        //            let request: NSURLRequest = NSURLRequest(URL: thumbnailURL)
-        //            let mainQueue = NSOperationQueue.mainQueue()
-        //            NSURLConnection.sendAsynchronousRequest(request, queue: mainQueue, completionHandler: { (response, data, error) -> Void in
-        //                if error == nil {
-        //                    // Convert the downloaded data in to a UIImage object
-        //                    let image = UIImage(data: data)
-        //                    // Store the image in to our cache
-        //                    self.imageCache[thumbnailURLString] = image
-        //                    // Update the cell
-        //                    dispatch_async(dispatch_get_main_queue(), {
-        //                        if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) {
-        //                            cellToUpdate.imageView?.image = image
-        //                        }
-        //                    })
-        //                }
-        //                else {
-        //                    println("Error: \(error.localizedDescription)")
-        //                }
-        //            })
-        //        }
+        // Update the textLabel text to use the title from the Album model
+        cell.textLabel?.text = workout.name
+        
+        
+        //cant get workout label for all cells
+        //workoutDateLabel?.text = workout.date
+        
         return cell
     }
     
@@ -86,13 +59,13 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
         })
     }
     
-    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    //        if let detailsViewController: DetailsViewController = segue.destinationViewController as? DetailsViewController {
-    //            var workoutIndex = workoutsTableView!.indexPathForSelectedRow()!.row
-    //            var selectedWorkout = self.workouts[workoutIndex]
-    //            detailsViewController.workout = selectedWorkout
-    //        }
-    //    }
+//        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//            if let detailsViewController: WODDetailViewController = segue.destinationViewController as? WODDetailViewController {
+//                var workoutIndex = workoutsTableView!.indexPathForSelectedRow()!.row
+//                var selectedWorkout = self.workouts[workoutIndex]
+//                detailsViewController.workout = selectedWorkout
+//            }
+//        }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)

@@ -12,10 +12,7 @@ struct Workout {
     let name: String
     let date: String
     let workout_description: String
-//    let largeImageURL: String
-//    let itemURL: String
-//    let artistURL: String
-//    let collectionId: Int
+    
     
     init(name: String, date: String, workout_description: String) {
         self.name = name
@@ -40,34 +37,7 @@ struct Workout {
                 var name = result["name"] as? String
                 var date = result["Date"] as? String
                 var workout_description = result["Description"] as? String
-//                if name == nil {
-//                    name = result["collectionName"] as? String
-//                }
-                
-                // Sometimes price comes in as formattedPrice, sometimes as collectionPrice.. and sometimes it's a float instead of a string. Hooray!
-//                var price = result["formattedPrice"] as? String
-//                if price == nil {
-//                    price = result["collectionPrice"] as? String
-//                    if price == nil {
-//                        var priceFloat: Float? = result["collectionPrice"] as? Float
-//                        var nf: NSNumberFormatter = NSNumberFormatter()
-//                        nf.maximumFractionDigits = 2
-//                        if priceFloat != nil {
-//                            price = "$\(nf.stringFromNumber(priceFloat!)!)"
-//                        }
-//                    }
-//                }
-                
-//                let thumbnailURL = result["artworkUrl60"] as? String ?? ""
-//                let imageURL = result["artworkUrl100"] as? String ?? ""
-//                let artistURL = result["artistViewUrl"] as? String ?? ""
-                
-//                var itemURL = result["collectionViewUrl"] as? String
-//                if itemURL == nil {
-//                    itemURL = result["trackViewUrl"] as? String
-//                }
-                
-//                if let collectionId = result["collectionId"] as? Int {
+
                     var newWorkout = Workout(name: name!,
                         date: date!,
                         workout_description: workout_description!)

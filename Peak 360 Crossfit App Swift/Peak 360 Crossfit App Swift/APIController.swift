@@ -58,19 +58,6 @@ class APIController {
         task.resume()
     }
     
-//    func searchItunesFor(searchTerm: String) {
-//        // The iTunes API wants multiple terms separated by + symbols, so replace spaces with + signs
-//        let itunesSearchTerm = searchTerm.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil)
-//        
-//        // Now escape anything else that isn't URL-friendly
-//        if let escapedSearchTerm = itunesSearchTerm.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding) {
-//            let urlPath = "https://itunes.apple.com/search?term=\(escapedSearchTerm)&amp;media=music&amp;entity=album"
-//            get(urlPath)
-//        }
-//    }
-    
-//    func lookupAlbum(collectionId: Int) {
-//        get("http://canescrossfitclub.com/api/workouts.php")
-//    }
+
     
 }

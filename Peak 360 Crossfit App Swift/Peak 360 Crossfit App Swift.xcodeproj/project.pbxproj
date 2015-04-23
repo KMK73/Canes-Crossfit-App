@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DF2E47D21AE88FBF00E3C2F2 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E47D11AE88FBF00E3C2F2 /* APIController.swift */; };
 		DF2E47D41AE88FE000E3C2F2 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E47D31AE88FE000E3C2F2 /* WorkoutCell.swift */; };
+		DF2E47D61AE89EA700E3C2F2 /* WODDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E47D51AE89EA700E3C2F2 /* WODDetailViewController.swift */; };
 		DF32EC1D1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32EC1C1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift */; };
 		DF32EC1F1AC8B06600A6BE3B /* WorkoutLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */; };
 		DF32EC211AC8B1AF00A6BE3B /* SampleWorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */; };
@@ -29,7 +30,6 @@
 		DFC616DD1AC8F17600F0F111 /* PrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */; };
 		DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */; };
 		DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */; };
-		DFE95F6F1AE33AA800938400 /* WorkoutApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE95F6E1AE33AA800938400 /* WorkoutApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		DF2E47D11AE88FBF00E3C2F2 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		DF2E47D31AE88FE000E3C2F2 /* WorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		DF2E47D51AE89EA700E3C2F2 /* WODDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WODDetailViewController.swift; path = ../WODDetailViewController.swift; sourceTree = "<group>"; };
 		DF32EC1C1AC8AE6200A6BE3B /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
 		DF32EC1E1AC8B06600A6BE3B /* WorkoutLeaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutLeaderboard.swift; sourceTree = "<group>"; };
 		DF32EC201AC8B1AF00A6BE3B /* SampleWorkoutData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleWorkoutData.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		DFC616DC1AC8F17600F0F111 /* PrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableViewController.swift; sourceTree = "<group>"; };
 		DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePRData.swift; sourceTree = "<group>"; };
 		DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableCell.swift; sourceTree = "<group>"; };
-		DFE95F6E1AE33AA800938400 /* WorkoutApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 				DF2E47D11AE88FBF00E3C2F2 /* APIController.swift */,
 				DF4619491AC8879500C144B7 /* WODViewController.swift */,
 				DF2E47D31AE88FE000E3C2F2 /* WorkoutCell.swift */,
-				DFE95F6E1AE33AA800938400 /* WorkoutApi.swift */,
+				DF2E47D51AE89EA700E3C2F2 /* WODDetailViewController.swift */,
 			);
 			name = "Workout Tab";
 			sourceTree = "<group>";
@@ -285,9 +285,9 @@
 				DF46194C1AC8879500C144B7 /* LeaderboardViewController.swift in Sources */,
 				DF2E47D21AE88FBF00E3C2F2 /* APIController.swift in Sources */,
 				DFC19BD51ACEF94800387E40 /* TestRegisterVC.swift in Sources */,
-				DFE95F6F1AE33AA800938400 /* WorkoutApi.swift in Sources */,
 				DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */,
 				DFCDBB601AC8FAF00038A86E /* PrTableCell.swift in Sources */,
+				DF2E47D61AE89EA700E3C2F2 /* WODDetailViewController.swift in Sources */,
 				DFC616DF1AC8F1CD00F0F111 /* SamplePRData.swift in Sources */,
 				DF32EC211AC8B1AF00A6BE3B /* SampleWorkoutData.swift in Sources */,
 				DF2E47D41AE88FE000E3C2F2 /* WorkoutCell.swift in Sources */,
