@@ -39,7 +39,7 @@ class APIController {
                     println("no errors")
                 }
                 if let results: NSArray = jsonResult["workouts"] as? NSArray {
-                    println("Heyo")
+                    println("GOT JSON RESULTS")
                     self.delegate.didReceiveAPIResults(results)
                 }
                 else {

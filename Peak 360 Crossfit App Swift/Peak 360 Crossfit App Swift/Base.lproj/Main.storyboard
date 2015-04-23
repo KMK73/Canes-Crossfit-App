@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="V3N-fr-XGq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 29, 2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C00-CI-ild">
-                                <rect key="frame" x="200" y="44" width="104" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-lz-H1Q">
-                                <rect key="frame" x="0.0" y="70" width="320" height="449"/>
+                                <rect key="frame" x="0.0" y="219" width="320" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutCell" textLabel="e5F-Sq-ukf" detailTextLabel="ojW-i9-tLQ" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="GKs-ae-WHm">
@@ -37,7 +32,7 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ojW-i9-tLQ">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ojW-i9-tLQ">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,32 +47,45 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="tSe-4R-Zea"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-1A-gdy">
-                                <rect key="frame" x="16" y="36" width="288" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucrossfit_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="V0S-Sd-Rva">
+                                <rect key="frame" x="7" y="28" width="306" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V0S-Sd-Rva" secondAttribute="height" multiplier="153:64" id="IUA-jV-wcY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canes Crossfit Club WOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-MJ-nO6">
+                                <rect key="frame" x="35" y="182" width="250" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ZDR-Bg-qQv"/>
+                                    <constraint firstAttribute="width" constant="250" id="pfZ-FX-rIK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="b0K-lz-H1Q" secondAttribute="centerX" id="1u5-tp-b8j"/>
-                            <constraint firstItem="b0K-lz-H1Q" firstAttribute="top" secondItem="5pK-1A-gdy" secondAttribute="bottom" constant="1" id="8iG-1t-aYO"/>
-                            <constraint firstItem="b0K-lz-H1Q" firstAttribute="top" secondItem="C00-CI-ild" secondAttribute="bottom" constant="8" id="9JE-GK-IAr"/>
-                            <constraint firstItem="C00-CI-ild" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="184" id="QSg-bs-i2l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="C00-CI-ild" secondAttribute="trailing" constant="0.5" id="Qqa-oU-c6u"/>
-                            <constraint firstItem="C00-CI-ild" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="24" id="ZyH-is-Ldr"/>
-                            <constraint firstItem="5pK-1A-gdy" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="dzy-sV-SqC"/>
-                            <constraint firstItem="5pK-1A-gdy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="16" id="g89-6A-gbl"/>
+                            <constraint firstItem="V0S-Sd-Rva" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-9" id="49P-Nk-OAx"/>
+                            <constraint firstItem="V0S-Sd-Rva" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="6JR-y9-COA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V0S-Sd-Rva" secondAttribute="trailing" constant="-9" id="Ezh-up-ho9"/>
+                            <constraint firstItem="tFD-MJ-nO6" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="19" id="ItN-cS-m5o"/>
+                            <constraint firstItem="V0S-Sd-Rva" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-9" id="PwT-71-gwd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tFD-MJ-nO6" secondAttribute="trailing" constant="19" id="Ymw-zD-wUN"/>
+                            <constraint firstItem="V0S-Sd-Rva" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="b1M-R7-Mnr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b0K-lz-H1Q" secondAttribute="trailing" constant="-16" id="hBj-Gf-mrK"/>
                             <constraint firstItem="b0K-lz-H1Q" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="hVA-hy-NTX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V0S-Sd-Rva" secondAttribute="trailing" constant="-9" id="j2Q-hM-7FZ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="b0K-lz-H1Q" secondAttribute="bottom" id="lMe-iL-jxb"/>
-                            <constraint firstItem="5pK-1A-gdy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="16" id="rP4-ji-gWW"/>
-                            <constraint firstItem="5pK-1A-gdy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="yew-Fm-hWu"/>
+                            <constraint firstItem="tFD-MJ-nO6" firstAttribute="top" secondItem="V0S-Sd-Rva" secondAttribute="bottom" constant="26" id="q2K-b6-o5e"/>
+                            <constraint firstItem="b0K-lz-H1Q" firstAttribute="top" secondItem="tFD-MJ-nO6" secondAttribute="bottom" constant="8" id="ufD-dw-a4J"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="WOD" image="wod_tab" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="canesLogoImage" destination="V0S-Sd-Rva" id="36m-ar-Sg3"/>
+                        <outlet property="welcomeLabel" destination="tFD-MJ-nO6" id="PD6-Mj-50a"/>
                         <outlet property="workoutsTableView" destination="b0K-lz-H1Q" id="gNT-KS-MTZ"/>
                         <segue destination="taj-O4-EQ7" kind="push" id="0PA-X9-VAU"/>
                     </connections>
@@ -719,6 +727,7 @@
         <image name="leaderboard_tab" width="40" height="40"/>
         <image name="pr_tab" width="40" height="40"/>
         <image name="profile_tab" width="40" height="40"/>
+        <image name="ucrossfit_logo.png" width="467" height="244"/>
         <image name="wod_tab" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

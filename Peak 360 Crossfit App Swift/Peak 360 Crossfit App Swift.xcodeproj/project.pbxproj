@@ -22,6 +22,7 @@
 		DF46196A1AC887D300C144B7 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4619691AC887D300C144B7 /* PRViewController.swift */; };
 		DF46196C1AC887E100C144B7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46196B1AC887E100C144B7 /* ProfileViewController.swift */; };
 		DF652A451AC9DB890082AD26 /* PrTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */; };
+		DFAA0AF01AE9471F00AEDE24 /* ucrossfit_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAA0AEF1AE9471F00AEDE24 /* ucrossfit_logo.png */; };
 		DFC19BC61ACCF2B900387E40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */; };
 		DFC19BD01ACEE36900387E40 /* ProtectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC19BCF1ACEE36900387E40 /* ProtectedViewController.swift */; };
 		DFC19BD31ACEE64800387E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC19BD11ACEE64800387E40 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		DF4619691AC887D300C144B7 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
 		DF46196B1AC887E100C144B7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DF652A441AC9DB890082AD26 /* PrTableDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrTableDetailViewController.swift; sourceTree = "<group>"; };
+		DFAA0AEF1AE9471F00AEDE24 /* ucrossfit_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ucrossfit_logo.png; sourceTree = "<group>"; };
 		DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DFC19BCF1ACEE36900387E40 /* ProtectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewController.swift; sourceTree = "<group>"; };
 		DFC19BD21ACEE64800387E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				DFCDBB5F1AC8FAF00038A86E /* PrTableCell.swift */,
 				DFC616DE1AC8F1CD00F0F111 /* SamplePRData.swift */,
 				DF4619501AC8879500C144B7 /* Images.xcassets */,
+				DFAA0AEF1AE9471F00AEDE24 /* ucrossfit_logo.png */,
 				DF4619521AC8879500C144B7 /* LaunchScreen.xib */,
 				DF4619451AC8879500C144B7 /* Supporting Files */,
 				DFC19BC51ACCF2B900387E40 /* LoginViewController.swift */,
@@ -263,6 +266,7 @@
 				DFC19BD31ACEE64800387E40 /* Main.storyboard in Resources */,
 				DF4619541AC8879500C144B7 /* LaunchScreen.xib in Resources */,
 				DF4619511AC8879500C144B7 /* Images.xcassets in Resources */,
+				DFAA0AF01AE9471F00AEDE24 /* ucrossfit_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

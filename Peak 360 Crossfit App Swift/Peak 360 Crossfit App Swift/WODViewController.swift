@@ -15,13 +15,15 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
     var imageCache = [String:UIImage]()
     @IBOutlet weak var workoutsTableView: UITableView!
 
-    @IBOutlet weak var workoutDateLabel: UILabel!
+    @IBOutlet weak var canesLogoImage: UIImageView!
+
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         api = APIController(delegate: self)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        api.get("http://canescrossfitclub.com/api/workouts_ios.php")
+        api.get("http://canescrossfitclub.com/api/workouts_ios.php") //just the current dates workouts
         //        api.searchItunesFor("Beatles")
     }
     
