@@ -23,8 +23,7 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
         super.viewDidLoad()
         api = APIController(delegate: self)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        api.get("http://canescrossfitclub.com/api/workouts_ios.php") //just the current dates workouts
-        //        api.searchItunesFor("Beatles")
+        api.get("http://canescrossfitclub.com/api/workouts_ios.php") //just the latest entry workouts
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,10 +39,10 @@ class WODViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(kCellIdentifier) as! UITableViewCell
         let workout = self.workouts[indexPath.row]
         
-        // Get the formatted price string for display in the subtitle
+        // Get the formatted string for display in the subtitle
         cell.detailTextLabel?.text = workout.workout_description
         
-        // Update the textLabel text to use the title from the Album model
+        // Update the textLabel text to use the title from the workout        
         cell.textLabel?.text = workout.name
         
         

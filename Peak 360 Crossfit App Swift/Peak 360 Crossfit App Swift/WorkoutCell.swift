@@ -31,7 +31,6 @@ struct Workout {
         // Store the results in our table data array
         if results.count>0 {
             
-            // Sometimes iTunes returns a collection, not a track, so we check both for the 'name'
             for result in results {
                 
                 var name = result["name"] as? String
