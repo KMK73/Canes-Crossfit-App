@@ -26,7 +26,7 @@ class ProtectedViewController: UIViewController {
 
         
         //if login was success send to tab bar view controller main screen
-        var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         if(prefs.integerForKey("ISLOGGEDIN") == 1) {
             self.performSegueWithIdentifier("LoggedIn", sender: self);
         } else {        //if it was not a success send to login page

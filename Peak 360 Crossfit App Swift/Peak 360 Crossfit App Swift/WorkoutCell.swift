@@ -33,11 +33,11 @@ struct Workout {
             
             for result in results {
                 
-                var name = result["name"] as? String
-                var date = result["Date"] as? String
-                var workout_description = result["Description"] as? String
+                let name = result["name"] as? String
+                let date = result["Date"] as? String
+                let workout_description = result["Description"] as? String
 
-                    var newWorkout = Workout(name: name!,
+                    let newWorkout = Workout(name: name!,
                         date: date!,
                         workout_description: workout_description!)
                     workouts.append(newWorkout)

@@ -35,7 +35,7 @@ class LeaderboardTableViewController: UITableViewController, UITableViewDataSour
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("WorkoutCell", forIndexPath: indexPath)
-                as! UITableViewCell
+                
             
             let workout = workouts[indexPath.row] as WorkoutLeaderboard
             cell.textLabel?.text = workout.name
